@@ -1,0 +1,34 @@
+INPUT FOR http://127.0.0.1:5000/boston 
+
+{
+	"CRIM" : 0.00632, 
+	"ZN" : 18.0, 
+	"INDUS" : 2.31, 
+	"CHAS": 0.0, 
+	"NOX": 0.538, 
+	"RM": 6.575, 
+	"AGE" : 65.2,  
+	"DIS" : 4.0900, 
+	"RAD" : 1.0,  
+	"TAX" : 296.0 , 
+	"PTRATIO" : 15.3, 
+	"B": 369.90,  
+	"LSTAT" : 4.98  
+}
+
+INPUT FOR http://127.0.0.1:5000/wine
+{
+	"alcohol" : 14.34, 
+	"malic_acid" : 1.68, 
+	"ash" : 2.7, 
+	"alcalinity_of_ash": 25.0, 
+	"magnesium": 98.0, 
+	"total_phenols": 2.8, 
+	"flavanoids" : 1.31,  
+	"nonflavanoid_phenols" : 0.53, 
+	"proanthocyanins" : 2.7,  
+	"color_intensity" : 13.0, 
+	"hue" : 0.57, 
+	"od280/od315_of_diluted_wines": 1.96,  
+	"proline" : 660.0
+}

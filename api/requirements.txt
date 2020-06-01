@@ -1,0 +1,6 @@
+flask
+Flask-RESTful
+opencv-python
+keras
+tensorflow
+gunicorn
