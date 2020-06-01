@@ -1,2 +1,0 @@
-18.218.89.61
-ssh -i beproject.pem ubuntu@18.218.89.61
