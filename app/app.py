@@ -302,7 +302,7 @@ def predict():
             r = requests.post(url,files = files)'''
             _, img_encoded = cv2.imencode('.jpg', img)
             # send http request with image and receive response
-            r = requests.post(test_url, data=img_encoded.tostring(), headers=headers)
+            r = requests.post(url, data=img_encoded.tostring(), headers=headers)
             y = r.json()
             zzz = y['Deficiency']
             zzzz = inf_dict[zzz]
