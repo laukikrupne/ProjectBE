@@ -242,9 +242,25 @@ inf_dict = {            "Apple___Apple_scab":{
                                                 },
                           "Tomato___Tomato_Yellow_Leaf_Curl_Virus":{
                                                 "title":"Tomato Yellow Leaf Curl Virus",
-                                                "caused_by":"Podosphaera clandestina, an obligate biotrophic fungus. Mid- and late-season sweet cherry (Prunus avium) .",
-                                                "desc":"Powdery mildew of sweet and sour cherry is caused by Podosphaera clandestina, an obligate biotrophic fungus. Mid- and late-season sweet cherry (Prunus avium) .",
-                                                "treatment":"The fungus attacks leaves and twigs, producing symptoms much like powdery mildew on apples. Infected leaves curl upward. Newly developed leaves on new shoot growth become progressively smaller, are generally pale, and are somewhat distorted. New shoots are shorter in length than normal. By mid-season, the whitish fungus can be seen growing over the leaves and shoots, sometimes in patches and other times covering most of the new growth. Such symptoms are especially common in nursery trees. The growth of sour cherry trees in the nursery and in young orchards is reduced by this disease."       
+                                                "caused_by":"This virus is transmitted by an insect vector from the family Aleyrodidae and order Hemiptera, the whitefly  Bemisia tabaci , commonly known as the silverleaf whitefly or the sweet potato whitefly.",
+                                                "desc":"Tomato yellow leaf curl virus (TYLCV) is a DNA virus from the genus  Begomovirus  and the family  Geminiviridae . TYLCV causes the most destructive disease of tomato, and it can be found in tropical and subtropical regions causing severe economic losses. This virus is transmitted by an insect vector from the family Aleyrodidae and
+                                                            order Hemiptera, the whitefly  Bemisia tabaci , commonly known as the silverleaf whitefly or the
+                                                            sweet potato whitefly. The primary host for TYLCV is the tomato plant, and other plant hosts
+                                                            where TYLCV infection has been found include eggplants, potatoes, tobacco, beans, and
+                                                            peppers. Due to the rapid spread of TYLCV in the last few decades, there is an increased focus
+                                                            in research trying to understand and control this damaging pathogen. Some interesting findings
+                                                            include virus being sexually transmitted from infected males to non-infected females (and vice
+                                                            versa), and an evidence that TYLCV is transovarially transmitted to offspring for two generations.",
+                                                "treatment":"Currently, the most effective treatments used to control the spread of TYLCV
+                                                                are insecticides and resistant crop varieties. The effectiveness of insecticides is not optimal in
+                                                                tropical areas due to whitefly resistance against the insecticides; therefore, insecticides should
+                                                                be alternated or mixed to provide the most effective treatment against virus
+                                                                transmission. [6]  Developing countries experience the most significant losses due to TYLCV
+                                                                infections due to the warm climate as well as the expensive costs of insecticides used as the
+                                                                control strategy. Other methods to control the spread of TYLCV include planting resistant/tolerant
+                                                                lines, crop rotation, and breeding for resistance of TYLCV. As with many other plant viruses, one
+                                                                of the most promising methods to control TYLCV is the production of transgenic tomato plants
+                                                                resistant to TYLCV."       
                                                 },
                           "Tomato___Tomato_mosaic_virus":{
                                                 "title":"Tomato Mosaic Virus",
