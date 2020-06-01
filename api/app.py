@@ -4,8 +4,6 @@ from werkzeug.utils import secure_filename
 from flask_restful import Api, Resource
 import numpy as np
 import cv2
-import pickle
-import pandas as pd
 import keras
 from keras.models import load_model
 from keras import backend as K
