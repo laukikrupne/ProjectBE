@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Leaflab</title>
+  <meta name="description" content="Free Bootstrap Theme by BootstrapMade.com">
+  <meta name="keywords" content="free website templates, free bootstrap themes, free template, free bootstrap, free website template">
+
+  <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Open+Sans|Raleway|Candal">
+  <link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='css/font-awesome.min.css') }}">
+  <link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='css/bootstrap.min.css') }}">
+  <link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='css/style.css') }}">
+  <!-- =======================================================
+    Theme Name: Medilab
+    Theme URL: https://bootstrapmade.com/medilab-free-medical-bootstrap-theme/
+    Author: BootstrapMade.com
+    Author URL: https://bootstrapmade.com
+  ======================================================= -->
+</head>
+
+<body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60">
+  <!--banner-->
+  <section id="banner" class="banner">
+    <div class="bg-color">
+      <nav class="navbar navbar-default navbar-fixed-top">
+        <div class="container">
+          <div class="col-md-12">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+				        <span class="icon-bar"></span>
+				        <span class="icon-bar"></span>
+				        <span class="icon-bar"></span>
+				      </button>
+              <a class="navbar-brand" href="#"><img src="{{ url_for('static',filename='img/logo.png') }}" class="img-responsive" style="width: 140px; margin-top: -43px;"></a>
+            </div>
+            <div class="collapse navbar-collapse navbar-right" id="myNavbar">
+              <ul class="nav navbar-nav">
+                <li class="active"><a href="#banner">Home</a></li>
+                <li class=""><a href="#service">Plants Deficiencies</a></li>
+                <li class=""><a href="#doctor-team">About Us</a></li>
+                <li class=""><a href="#contact">Contact</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <div class="container">
+        <div class="row">
+          <div class="banner-info">
+            <div class="banner-logo text-center">
+              <img src="{{ url_for('static',filename='img/logo1.png') }}" class="img-responsive">
+            </div>
+            <div class="banner-text text-center">
+              <h1 class="white">Welcome to LeafLab+</h1>
+              <p>LeafLab+ provides you a platform to check the diseases and deficiencies <br>present inside the plant with help of a single leaf.</p>
+              <a href="#contact" class="btn btn-appoint">Check your plant Leaf!</a>
+            </div>
+            <div class="overlay-detail text-center">
+              <a href="#service"><i class="fa fa-angle-down"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!--/ banner-->
+  <!--service-->
+  <section id="service" class="section-padding">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4 col-sm-4">
+          <h2 class="ser-title">Leaflab+ Support</h2>
+          <hr class="botm-line">
+          <p>Just upload an image of a leaf of plant. You will find all necessary information about diseases and deficiencies of that plant. We current have 11 species dataset with 38 types of deficiencies. We continuously update our platform with more types of deficiencies. Some example of diseases are here!</p>
+        </div>
+        <div class="col-md-4 col-sm-4">
+          <div class="service-info">
+            <div class="icon">
+              <i class="fa fa-stethoscope"></i>
+            </div>
+            <div class="icon-info">
+              <h4>Fast Diagnosis</h4>
+              <p>Get efficient and fast results exclusive, anytime, anywhere!</p>
+            </div>
+          </div>
+          <div class="service-info">
+            <div class="icon">
+              <i class="fa fa-ambulance"></i>
+            </div>
+            <div class="icon-info">
+              <h4>Emergency Solutions</h4>
+              <p>A stitch in time saves nine! Get effective emergency solutions to the deficiencies and diseases.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 col-sm-4">
+          <div class="service-info">
+            <div class="icon">
+              <i class="fa fa-user-md"></i>
+            </div>
+            <div class="icon-info">
+              <h4>Be a Plant Doctor</h4>
+              <p>Find every information of the diseases occuring in plants with proper remedies.</p>
+            </div>
+          </div>
+          <div class="service-info">
+            <div class="icon">
+              <i class="fa fa-medkit"></i>
+            </div>
+            <div class="icon-info">
+              <h4>Grow them Amigos</h4>
+              <p>Spread valuable information and share this software with your friends to help them with their plants</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!--/ service-->
+  <!--cta-->
+  <section id="cta-1" class="section-padding">
+    <div class="container">
+      <div class="row">
+        
+      </div>
+    </div>
+  </section>
+  <!--cta-->
+  <!--doctor team-->
+  <section id="doctor-team" class="section-padding">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <h2 class="ser-title">Meet Our Experts!</h2>
+          <hr class="botm-line">
+        </div>
+        <div class="col-md-4 col-sm-4 col-xs-6">
+          <div class="thumbnail">
+            <img src="{{ url_for('static',filename='img/doctor1.jpg') }}" alt="..." class="team-img">
+            <div class="caption">
+              <h3>Suyog Pawar</h3>
+              <p>Data Scientist</p>
+              <ul class="list-inline">
+                <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+	
+        <div class="col-md-4 col-sm-4 col-xs-6">
+          <div class="thumbnail">
+            <img src="{{ url_for('static',filename='img/doctor2.jpg') }}" alt="..." class="team-img">
+            <div class="caption">
+              <h3>Aditya Apshinge</h3>
+              <p>Big Data Engineer</p>
+              <ul class="list-inline">
+                <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4 col-sm-4 col-xs-6">
+          <div class="thumbnail">
+            <img src="{{ url_for('static',filename='img/doctor3.jpg') }}" alt="..." class="team-img">
+            <div class="caption">
+              <h3>Laukik Rupne</h3>
+              <p>System Design Engineer</p>
+              <ul class="list-inline">
+                <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+		
+        <!--<div class="col-md-3 col-sm-3 col-xs-6">
+          <div class="thumbnail">
+            <img src="img/doctor4.jpg" alt="..." class="team-img">
+            <div class="caption">
+              <h3>Jason Davis</h3>
+              <p>Doctor</p>
+              <ul class="list-inline">
+                <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+              </ul>
+            </div>
+          </div>
+        </div>-->
+      </div>
+    </div>
+  </section>
+  <!--/ doctor team-->
+  <!--testimonial-->
+  
+  <!--cta 2-->
+  <section id="cta-2" class="section-padding">
+    <div class="container">
+      <div class=" row">
+        <div class="col-md-2"></div>
+        <!--<div class="text-right-md col-md-4 col-sm-4">
+          <h2 class="section-title white lg-line">« A few words<br> about us »</h2>
+        </div>-->
+        <div class="col-md-8 col-sm-9">
+          The planting of a tree, especially one of the long-living hardwood trees, is a gift which you can make to posterity at almost no cost and with almost no trouble, and if the tree takes root it will far outlive the visible effect of any of your other actions, good or evil.
+          <p class="text-right text-primary"><i>― George Orwell</i></p>
+        </div>
+        <div class="col-md-2"></div>
+      </div>
+    </div>
+  </section>
+  <!--cta-->
+  <!--contact-->
+  <section id="contact" class="section-padding">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <h2 class="ser-title">Contact us</h2>
+          <hr class="botm-line">
+        </div>
+        <div class="col-md-4 col-sm-4">
+          <h3>Contact Info</h3>
+          <div class="space"></div>
+          <p><i class="fa fa-map-marker fa-fw pull-left fa-2x"></i>Ramrao Adik Institute of Technology<br> Sector 7, Nerul, Navi Mumbai 400706</p>
+          <div class="space"></div>
+          <p><i class="fa fa-envelope-o fa-fw pull-left fa-2x"></i>apshineaditya@gmail.com</p>
+          <div class="space"></div>
+          <p><i class="fa fa-phone fa-fw pull-left fa-2x"></i>+1 800 123 1234</p>
+        </div>
+        <div class="col-md-8 col-sm-8 marb20">
+          <div class="contact-info input-group">
+            <h3 class="cnt-ttl">For more accuracy! Select image with single leaf.</h3>
+            <div class="space"></div>
+            <form action="predict" method="post" enctype=multipart/form-data>
+              <!--<div class="form-group">
+                <input type="text" name="name" class="form-control br-radius-zero" id="name" placeholder="Your Name" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
+                <div class="validation"></div>
+              </div>-->
+			  <div class="custom-file form-group">
+				<input type="file" name="file" class="custom-file-input" id="inputGroupFile01">
+			  </div>
+
+              <div class="form-action">
+                <input type="submit" class="btn btn-form" value=Predict>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!--/ contact-->
+  <!--footer-->
+  <footer id="footer">
+    <div class="top-footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4 col-sm-4 marb20">
+            <div class="ftr-tle">
+              <h4 class="white no-padding">About Us</h4>
+            </div>
+            <div class="info-sec">
+              <p>LeafLab+ provides you a platform to check the diseases and deficiencies <br>present inside the plant with help of a single leaf.</p>
+            </div>
+          </div>
+          <div class="col-md-4 col-sm-4 marb20">
+            <div class="ftr-tle">
+              <h4 class="white no-padding">Quick Links</h4>
+            </div>
+            <div class="info-sec">
+              <ul class="quick-info">
+                <li><a href="/"><i class="fa fa-circle"></i>Home</a></li>
+                <li><a href="#service"><i class="fa fa-circle"></i>Plant Deficiencies</a></li>
+                <li><a href="#doctor-team"><i class="fa fa-circle"></i>About Us</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-md-4 col-sm-4 marb20">
+            <div class="ftr-tle">
+              <h4 class="white no-padding">Follow us</h4>
+            </div>
+            <div class="info-sec">
+              <ul class="social-icon">
+                <li class="bglight-blue"><i class="fa fa-facebook"></i></li>
+                <li class="bgred"><i class="fa fa-google-plus"></i></li>
+                <li class="bgdark-blue"><i class="fa fa-linkedin"></i></li>
+                <li class="bglight-blue"><i class="fa fa-twitter"></i></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer-line">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12 text-center">
+            <div class="credits">
+				Thank You !
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!--/ footer-->
+
+  <script src="{{ url_for('static',filename='js/jquery.min.js') }}"></script>
+  <script src="{{ url_for('static',filename='js/jquery.easing.min.js') }}"></script>
+  <script src="{{ url_for('static',filename='js/bootstrap.min.js') }}"></script>
+  <script src="{{ url_for('static',filename='js/custom.js') }}"></script>
+
+</body>
+
+</html>
