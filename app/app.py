@@ -6,6 +6,8 @@ import json
 import numpy as np
 import cv2
 from flask_sqlalchemy import SQLAlchemy
+from sqlalchemy_utils import create_database, database_exists
+
 
 '''inf_dict = {            "Apple___Apple_scab":{
                                                 "title":"Apple Scrab",

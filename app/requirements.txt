@@ -4,3 +4,4 @@ numpy
 opencv-python
 requests
 flask_sqlalchemy
+SQLAlchemy-Utils
