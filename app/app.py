@@ -5,8 +5,9 @@ from werkzeug.utils import secure_filename
 import json
 import numpy as np
 import cv2
+from flask_sqlalchemy import SQLAlchemy
 
-inf_dict = {            "Apple___Apple_scab":{
+'''inf_dict = {            "Apple___Apple_scab":{
                                                 "title":"Apple Scrab",
                                                 "caused_by":"Fungus Venturia Inaequalis",
                                                 "desc":"A serious disease of apples and ornamental crabapples, apple scab (Venturia inaequalis) attacks both leaves and fruit. The fungal disease forms pale yellow or olive-green spots on the upper surface of leaves. Dark, velvety spots may appear on the lower surface.",
@@ -258,7 +259,23 @@ inf_dict = {            "Apple___Apple_scab":{
                                                 "desc":"HEALTHY",
                                                 "treatment":"HEALTHY"       
                                                 }
-                        }
+                        }'''
+db_url = 'mysql+pymysql://root:root@mysql/plant_deficiency'
+app.config['SQLALCHEMY_DATABASE_URI'] = db_url
+app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
+
+db = SQLAlchemy(app)
+
+# create database if not exists
+if not database_exists(db_url):
+    create_database(db_url)
+
+class Deficiency(db.Model):
+    Deficiency = db.Column(db.Varchar(55), primary_key=True)
+    title = db.Column(db.Varchar(55))
+    caused_by = db.Column(db.Text)
+    desc = db.Column(db.Text)
+    treatment = db.Column(db.Text)
 
 ALLOWED_EXTENSIONS = set(['png', 'jpg', 'jpeg'])
 DEBUG = True
@@ -293,21 +310,13 @@ def predict():
             filex = file.read()
             nparr = np.fromstring(filex, np.uint8)
             img = cv2.imdecode(nparr, cv2.IMREAD_COLOR)
-            '''filename = secure_filename(file.filename)
-            file.save(os.path.join(app.config['UPLOAD_FOLDER'], filename))
-            fileloc = os.path.dirname(os.path.realpath(__file__))+"/uploads/"+filename
-            #image = cv2.imread(os.path.dirname(os.path.realpath(__file__))+"/uploads/"+filename)
-            fff = open(fileloc, 'rb')
-            files = {'file': fff}
-            r = requests.post(url,files = files)'''
             _, img_encoded = cv2.imencode('.jpg', img)
             # send http request with image and receive response
             r = requests.post(url, data=img_encoded.tostring(), headers=headers)
             y = r.json()
             zzz = y['Deficiency']
-            zzzz = inf_dict[zzz]
-            '''fff.close()
-            os.remove(fileloc)'''
+            #zzzz = inf_dict[zzz]
+            zzzz = Deficiency.select([deficiency]).where(deficiency.columns.deficiency == zzz)
             return render_template('def.html', string = zzzz)
     else:
         return redirect(url_for('index'))
