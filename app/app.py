@@ -320,7 +320,7 @@ def predict():
             zzz = y['Deficiency']
             #zzzz = inf_dict[zzz]
             #zzzz = Deficiency.select().where(deficiency.columns.deficiency == zzz)
-            zzzz = Deficiency.query.filter_by(deficiency=zzz).first()
+            zzzz = Deficiency.query.filter_by(Deficiency=zzz).first()
             return render_template('def.html', string = zzzz)
     else:
         return redirect(url_for('index'))
