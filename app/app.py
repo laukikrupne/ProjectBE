@@ -277,8 +277,8 @@ if not database_exists(db_url):
     create_database(db_url)
 
 class Deficiency(db.Model):
-    Deficiency = db.Column(db.Varchar(55), primary_key=True)
-    title = db.Column(db.Varchar(55))
+    Deficiency = db.Column(db.VARCHAR(55), primary_key=True)
+    title = db.Column(db.VARCHAR(55))
     caused_by = db.Column(db.Text)
     desc = db.Column(db.Text)
     treatment = db.Column(db.Text)
