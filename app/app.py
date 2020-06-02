@@ -319,7 +319,8 @@ def predict():
             y = r.json()
             zzz = y['Deficiency']
             #zzzz = inf_dict[zzz]
-            zzzz = Deficiency.select().where(deficiency.columns.deficiency == zzz)
+            #zzzz = Deficiency.select().where(deficiency.columns.deficiency == zzz)
+            zzzz = Deficiency.query.filter_by(deficiency=zzz).first()
             return render_template('def.html', string = zzzz)
     else:
         return redirect(url_for('index'))
