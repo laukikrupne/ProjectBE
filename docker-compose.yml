@@ -19,3 +19,26 @@ services:
     restart: always
     ports: 
       - "80:80"
+  mysql:
+    container_name: mysql
+    build: 'mysql/.'
+    restart: unless-stopped
+    #volumes:
+    #    - mysql-data:/var/lib/mysql
+    restart: unless-stopped
+    ports:
+        - "3306:3306"
+    environment:
+        MYSQL_ROOT_PASSWORD: root
+  phpmyadmin:
+      container_name: phpmyadmin
+      build: 'phpmyadmin/.'
+      restart: unless-stopped
+      links:
+          - mysql
+      depends_on:
+          - mysql
+      ports:
+          - "8080:80"  
+      environment:
+          PMA_HOST: mysql
