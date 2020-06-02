@@ -29,8 +29,8 @@ services:
     container_name: mysql
     build: 'mysql/.'
     restart: unless-stopped
-    #volumes:
-    #    - mysql-data:/var/lib/mysql
+    volumes:
+      - mysql-data:/var/lib/mysql
     restart: unless-stopped
     ports:
         - "3306:3306"
