@@ -261,6 +261,10 @@ from flask_sqlalchemy import SQLAlchemy
                                                 }
                         }'''
 db_url = 'mysql+pymysql://root:root@mysql/plant_deficiency'
+app = Flask(__name__)
+app.config.from_object(__name__)
+app.config['SECRET_KEY'] = 'Thisissupposedtobesecret!'
+DEBUG = True
 app.config['SQLALCHEMY_DATABASE_URI'] = db_url
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 
@@ -278,10 +282,7 @@ class Deficiency(db.Model):
     treatment = db.Column(db.Text)
 
 ALLOWED_EXTENSIONS = set(['png', 'jpg', 'jpeg'])
-DEBUG = True
-app = Flask(__name__)
-app.config.from_object(__name__)
-app.config['SECRET_KEY'] = '7d441f27d441f27567d441f2b6176a'
+
 
 def allowed_file(filename):
 	return '.' in filename and \
