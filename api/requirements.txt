@@ -1,6 +1,8 @@
 flask
 Flask-RESTful
 opencv-python
+numpy==1.16.5
+scipy==1.4.1
 keras
 tensorflow
 gunicorn
